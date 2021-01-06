@@ -1,0 +1,55 @@
+.footer {
+  margin-top: 3rem;
+
+  padding: 2rem 0;
+  background-color: $color-grey-dark-1;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 0 auto;
+
+    border-bottom: 0.5px solid $color-grey-light-3;
+
+    &-icon {
+      width: 6rem;
+      height: 6rem;
+
+      color: $color-secondary-medium;
+    }
+  }
+
+  &__heading {
+    color: $color-primary-light;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 2;
+
+    margin: 0 1rem;
+  }
+
+  &__api {
+    margin: 0 auto;
+    padding-top: 2rem;
+    width: 25%;
+    padding-bottom: 2rem;
+
+    &-link {
+      display: inline-flex;
+      padding-left: 1rem;
+      margin: 0 2rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1rem;
+      text-decoration: none;
+      color: $color-primary-light;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-secondary-light;
+      }
+    }
+  }
+}

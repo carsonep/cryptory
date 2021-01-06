@@ -1,0 +1,11 @@
+.btn {
+  background-color: $color-secondary-dark;
+  padding: 0.6rem 2rem;
+  border-radius: 100px;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-secondary-light;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  }
+}

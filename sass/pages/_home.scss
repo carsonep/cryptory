@@ -1,0 +1,96 @@
+.crypto__table {
+  color: #ffffff;
+
+  width: 70%;
+  border-collapse: collapse;
+  border-spacing: 5px;
+  margin: 0 auto;
+}
+
+#crypto__table-heading {
+  border-top: 0.5px solid $color-grey-light-3;
+  border-bottom: 0.5px solid $color-grey-light-3;
+  //   margin-top: ;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  color: $color-grey-light-1;
+}
+
+th,
+td {
+  border-bottom: 0.5px solid $color-grey-light-3;
+  padding: 15px;
+  text-align: left;
+}
+
+tr:hover {
+  cursor: pointer;
+  background-color: $color-grey-dark-1;
+  transition: all 0.2s;
+}
+
+.crypto__table-heading {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+  &-views {
+    display: flex;
+    list-style: none;
+    font-weight: 400;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      padding-left: 1rem;
+    }
+
+    li {
+      margin-left: 2rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &-selected {
+    border-bottom: 4px solid $color-secondary-light;
+    padding-bottom: 1rem;
+    color: $color-primary-light;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+    transform: translateY(-3px);
+    transition: all 0.2s;
+  }
+
+  &-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+
+    &-after {
+      margin-left: 2rem;
+      color: #ffffff;
+      transition: all 0.2s;
+    }
+
+    &-before {
+      color: #ffffff;
+      transition: all 0.2s;
+    }
+
+    &-before:hover {
+      color: $color-secondary-light;
+    }
+
+    &-after:hover {
+      color: $color-secondary-light;
+    }
+  }
+}

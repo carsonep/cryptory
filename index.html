@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/stocktools/gui.css">
+    <link rel="stylesheet" type="text/css" href="https://code.highcharts.com/css/annotations/popup.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="sass/main.scss" /> -->
+ 
+    <!-- <script src="https://code.highcharts.com/highcharts.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+ 
+    <!-- <script defer src="js/controller.js"></script> -->
+    <title>Cryptory</title>
+  </head>
+
+  <body>
+    <div class="navigation">
+      <nav class="navigation__nav">
+        <div class="navigation__logo-title">
+          <ion-icon name="analytics-sharp" class="navigation__logo"></ion-icon>
+          <!-- <img src="https://cryptologos.cc/logos/uquid-coin-uqc-logo.png?v=009" alt="" class="navigation__logo"> -->
+          <p class="navigation__heading">Cryptory</p>
+        </div>
+
+        <div class="navigation__container">
+          <div class="navigation__search">
+            <ion-icon
+              name="search-outline"
+              class="navigation__search-icon"
+            ></ion-icon>
+            <input
+              type="text"
+              class="navigation__search-bar"
+              placeholder="Search..."
+            />
+          </div>
+              
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#crypto__prices" class="btn navigation__link">Live Prices</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#news" class="btn navigation__link">News</a>
+            </li>
+          </ul>
+
+
+          
+        </div>      
+      </nav>
+    </div>
+    
+
+    <div id="crypto__prices" class="crypto__tracker">
+      <!-- <div class="crypto__tracker-title"> -->
+      <h2 class="crypto__tracker-heading">Crypto Tracker</h2>
+      <ul class="crypto__tracker-container">
+        
+      </ul>
+      
+    </div>
+
+    <div class="crypto__table-heading">
+      <div class="crypto__table-heading-selector">
+        <ul class="crypto__table-heading-views">
+          <li class="crypto__table-heading-selected chart__heading">Cryptocurrencies</li>
+          
+        </ul>
+      </div>
+      
+    </div>
+
+     <table class="crypto__table">
+      
+       <tr class="container" id="crypto__table-heading">
+        <th>#</th>
+        <th width="300">Name</th>
+        <th>24H Change</th>
+        <th>price</th>
+        <th class="btc__column">Price in BTC</th>
+        <th>Volume 24h</th>
+        <th class="chart__column">Price Graph (7D)</th>     
+      </tr>
+    </table> 
+
+    
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            
+        </div>
+    </div>
+
+    <div id="news" class="crypto__table-heading">
+      <div class="crypto__table-heading-selector">
+        <ul class="crypto__table-heading-views">
+          <li class="crypto__table-heading-selected">Latest news</li>    
+        </ul>
+      </div>
+      <div class="crypto__table-heading-pagination">
+        <input type='button' href="#" value="Show more" class="news__show-more"
+          ></input>
+          
+      </div>
+    </div>
+
+    
+
+    <div class="news">
+      
+    </div>
+
+<div class="footer">
+  <div class="footer__logo">
+    <ion-icon name="analytics-sharp" class="footer__logo-icon"></ion-icon>
+    <p class="footer__heading">Cryptory</p>
+  </div>
+  <div class="footer__api">
+<a href="https://documenter.getpostman.com/view/5734027/RzZ6Hzr3" target="_blank" class="footer__api-link">Postman API</a>
+<a href="https://coinstats.app/" target="_blank" class="footer__api-link">CoinStats Design Inspiration</a>
+  </div>
+</div>
+
+
+
+<!-- <script src="http://code.highcharts.com/stock/highstock.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/modules/offline-exporting.js"></script>
+<script src="http://code.highcharts.com/modules/export-data.js"></script>
+<script src="http://code.highcharts.com/modules/series-label.js"></script>
+<script src="http://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/stock-tools.js"></script> -->
+<script src="https://code.highcharts.com/stock/highstock.js"></script>
+<script src="https://code.highcharts.com/stock/modules/data.js"></script>
+<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/stock/modules/export-data.js"></script>
+
+<script src="js/controller.js"></script>
+  </body>
+</html>
+
+

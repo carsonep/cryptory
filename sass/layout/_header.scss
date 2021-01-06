@@ -1,0 +1,60 @@
+.crypto__tracker {
+  display: flex;
+  margin: 0 3rem;
+
+  display: block;
+  align-items: center;
+  justify-content: center;
+
+  // &-title {
+
+  // }
+
+  &-container {
+    padding: 2rem 0;
+    display: flex;
+    width: 48.5%;
+
+    margin: 0 auto;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+
+    border-top: 0.5px solid $color-grey-light-3;
+    border-bottom: 0.5px solid $color-grey-light-3;
+  }
+
+  &-heading {
+    margin: 0;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  &-content {
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 3rem;
+  }
+
+  &-title {
+    color: $color-grey-light-1;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+
+  &-value {
+    display: inline-flex;
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+
+  &-percent {
+    margin-left: 1rem;
+    color: green;
+  }
+}
