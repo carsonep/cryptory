@@ -1,12 +1,20 @@
 * {
   margin: 0;
   padding: 0;
+  /* width: 100%; */
+
+  /* overflow-x: hidden; */
   font-family: "Lato", sans-serif;
 }
 
 html {
   background-color: #1a1a1d;
   scroll-behavior: smooth;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+
+  overflow-x: hidden;
 }
 
 h2 {
@@ -657,6 +665,10 @@ tr:hover {
   .chart__container {
     display: none;
   }
+
+  .crypto__table {
+    width: 50%;
+  }
   .chart__column {
     display: none;
   }
@@ -672,7 +684,7 @@ tr:hover {
 
   .navigation__search {
     width: 50%;
-    margin-right: 5rem;
+    margin-right: 7rem;
   }
 
   .news {
@@ -698,5 +710,9 @@ tr:hover {
     flex-direction: column;
     align-items: center;
     margin-left: 5rem;
+  }
+
+  .navigation__search {
+    margin-right: 8rem;
   }
 }
